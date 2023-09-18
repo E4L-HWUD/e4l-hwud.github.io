@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.team-member {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    padding: 20px;
+    display: inline-block;
+    max-width: 300px; /* Limit the maximum width of the card */
+    text-align: center;
+}
+
+.team-member img {
+    max-width: 100%;
+    max-height: 20%; /* Limit the maximum height of the image */
+}
+
+.team-member h2 {
+    color: black;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.team-member h3 {
+    font-size: 18px;
+    color: #777;
+    margin-top: 5px;
+}
+
+.team-member p {
+    color: black;
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
