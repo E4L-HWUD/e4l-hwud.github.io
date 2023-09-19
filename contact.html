@@ -30,7 +30,7 @@
   /* Remove margins from "page content" on small screens */
   @media only screen and (max-width: 600px) {#main {margin-left: 0}}
   </style>
-  <body class="w3-black">
+  <body class="w3-black" style="background-image: url(images/custombackground.jpg); background-repeat: no-repeat; background-size: cover;">
 
   <!-- Icon Bar (Sidebar - hidden on small screens) -->
   <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
@@ -95,11 +95,11 @@
       </div><br>
       <p style="color: white;">Subscribe to our weekly Newsletter using the below forms</p>
 
-      <form action="/action_page.php" target="_blank">
+      <form method="post" action="" target="_blank" name="contact-form">
         <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
         <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
-        <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
-        <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
+        <p><input class="w3-input w3-padding-16" type="text" placeholder="Phone Number" required name="Phone-Number"></p>
+        <p><input class="w3-input w3-padding-16" type="text" placeholder="Course and Year of Study" required name="Course-and-Year"></p>
         <p>
           <button class="w3-button w3-light-grey w3-padding-large" type="submit">
             <i class="fa fa-paper-plane"></i> SEND MESSAGE
@@ -123,5 +123,6 @@
   <!-- END PAGE CONTENT -->
   </div>
 
+  <script src="Google Sheet.js"></script>
   </body>
 </html>
