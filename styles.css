@@ -17,6 +17,50 @@ body {
     text-align: center;
 }
 
+.team-member1 {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    padding: 20px;
+    display: inline-block;
+    max-width: 200px; /* Limit the maximum width of the card */
+    text-align: center;
+    max-height: 600px;
+
+}
+
+.team-member1 img{
+    max-width: 100%;
+    max-height: 20%; /* Limit the maximum height of the image */
+}
+
+.team-member1 {
+    color: black;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.team-member1 h2 {
+    color: black;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.team-member1 h3 {
+    font-size: 0.9rem;
+    color: #777;
+    margin-top: 5px;
+}
+
+.team-member1 p {
+    color: black;
+    font-size: 0.7rem;
+    margin-top: 10px;
+}
+
 .team-member img {
     max-width: 100%;
     max-height: 20%; /* Limit the maximum height of the image */
@@ -39,4 +83,75 @@ body {
     color: black;
     font-size: 0.9rem;
     margin-top: 10px;
+}
+
+/*Next section design*/
+.team-member2 {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    padding: 20px;
+    display: inline-block;
+    max-width: 200px; /* Limit the maximum width of the card */
+    text-align: center;
+    max-height: 600px;
+
+}
+
+.team-member2 img{
+    max-width: 100%;
+    max-height: 20%; /* Limit the maximum height of the image */
+}
+
+.team-member2 {
+    color: black;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.team-member2 h2 {
+    color: black;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.team-member2 h3 {
+    font-size: 1rem;
+    color: #777;
+    margin-top: 5px;
+}
+
+.team-member2 p {
+    color: black;
+    font-size: 0.7rem;
+    margin-top: 10px;
+}
+
+
+.container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.timetable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.timetable th,
+.timetable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.timetable th {
+    background-color: #f2f2f2;
+    font-weight: bold;
 }
