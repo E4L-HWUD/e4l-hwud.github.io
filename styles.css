@@ -139,7 +139,7 @@ body {
 }
 
 .timetable {
-    width: 100%;
+    width: 92%;
     border-collapse: collapse;
     margin-top: 20px;
 }
@@ -155,3 +155,4 @@ body {
     background-color: #f2f2f2;
     font-weight: bold;
 }
+

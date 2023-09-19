@@ -29,6 +29,30 @@
   #main {margin-left: 120px}
   /* Remove margins from "page content" on small screens */
   @media only screen and (max-width: 600px) {#main {margin-left: 0}}
+  .custom-button {
+            width: 46%;
+            background-color: #484848;
+            display: inline-block;
+            color: white;
+            padding: 10px 20px;
+            border: 2px solid white; /* Add a white border */
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Add border-color transition */
+        }
+
+        .custom-button:hover {
+            background-color: white;
+            color: black;
+            border-color: black; /* Change border color on hover */
+        }
+        .text-content1 {
+            flex: 1;
+            font-size: 1.3rem;
+            background-color: black;
+            color: white;
+            padding: 20px;
+            font-family: 'Courier New', Courier, monospace;
+        }
   </style>
   <body class="w3-black">
 
@@ -80,16 +104,14 @@
 
     <!-- About Section -->
     <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
-      <marquee behavior="scroll" direction="left" scrollamount="18" style="font-size: 2rem; padding-bottom: 3%; padding-top: 3%; background-color: #222; color: azure; width: 100%; margin-left: 0%; margin-right: 0%;">Announcements</marquee><br><br>
-
-      <h3 class="dayname" style="text-align: center; font-size: 3rem; color: white; font-family: 'Courier New', Courier, monospace;">Major Announcements</h3>
+      <marquee behavior="scroll" direction="left" scrollamount="18" style="font-size: 3rem; padding-bottom: 3%; padding-top: 3%; background-color: #222; color: azure; width: 100%; margin-left: 0%; margin-right: 0%;">Announcements</marquee><br><br>
         <div class="resources">
             <section>
-                <table class="timetable" style="width: 100%; text-align: center; margin-bottom: 10%; border-style: dashed;">
+                <center><table class="timetable" style="width: 98%; text-align: center; margin-bottom: 7%; border-style: dashed;">
                     <thead>
                         <tr>
-                            <th class="heading" style="font-size: 1.5rem; color: white; border-style: dashed;">Topic</th>
-                            <th class="heading" style="font-size: 1.5rem; color: white; border-style: dashed;">Description</th>
+                            <th class="heading" style="font-size: 1.5rem; color: white; border-style: dashed; font-family: 'Courier New', Courier, monospace;">Topic</th>
+                            <th class="heading" style="font-size: 1.5rem; color: white; border-style: dashed; font-family: 'Courier New', Courier, monospace;">Description</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -98,179 +120,39 @@
                             <td class="pl" style="border-style: dashed; color: white;">E4L Website goes live on 27th Sept Wed 2023</td>
                         </tr>
                     </tbody>
-                </table>
+                </table></center>
+            </section>
 
-      <h2 class="w3-text-light-grey" style="font-family: 'Courier New', Courier, monospace; font-size: 200%; margin: 0%;">About the Club</h2>
-      <hr style="width:200px" class="w3-opacity">
+            <center><button class="custom-button" style="margin-bottom: 0%; font-size: 1.3rem; margin-right: 5%;"><a href="" style="text-decoration: none;">Register with our club</a></button>
+              <button class="custom-button" style="margin-bottom: 4%; font-size: 1.3rem; margin-bottom: 10%;"><a href="" style="text-decoration: none;">Apply for our next event</a></button></center>
 
-      <p style="color: white;">🚀 Get ready to witness the unstoppable force that is E4L – Engineers 4 Life! It's not just a club; it's the heartbeat of engineering at Heriot Watt University Dubai, and it's about to leave you awestruck.<br><br>
+      <div class="text-with-image-container">
+        <div class="text-content1">
+            <h2 class="w3-text-light-grey" style="font-family: 'Courier New', Courier, monospace; font-size: 200%; margin: 0%; font-weight: bold;">About Us</h2>
+            <hr style="width:200px" class="w3-opacity">
+            <p style="color: white; font-size: 1rem;">🚀E4L-HWUD aims to stand as the primary destination for engineering enthusiasts within Heriot-Watt University Dubai. We provide a supportive and inclusive environment where students from various engineering disciplines and other courses can come together to learn, collaborate, and thrive.<br><br>
 
-        💡 In the heart of our tight-knit family of future engineers, we thrive on innovation, the exhilaration of problem-solving, and the unyielding commitment to revolutionize the world through groundbreaking engineering marvels!<br><br>
-        
-        🌟 Picture a place where curiosity knows no bounds, where innovation breathes and students with an insatiable passion for engineering come together. Welcome to the electric energy of E4L!<br><br>
-        
-        🏆 E4L proudly bears the banner as the official engineering club of our prestigious university. To us, engineering isn't just a subject; it's a calling, a way of life. We view engineering as the compass guiding our world's destiny, and E4L is your exclusive ticket to a realm of limitless possibilities in the dynamic field of engineering. Prepare to be inspired, challenged, and amazed as we pave the way to an engineering future like no other! 🌠💪
-      </p>
-      <br>
+              🚀 Our society aims in nurturing well-rounded engineers. We aim to offer a multifaceted experience that goes beyond academics. This includes professional development, social engagement, and personal growth opportunities to ensure that our members are prepared for the challenges and opportunities they will face in their engineering careers.<br><br>
+              
+              🚀 We are committed to equipping our members with a diverse skill set, encompassing technical, interpersonal, and ethical skills. This includes providing access to workshops, seminars, and resources that enhance both technical prowess and soft skills such as leadership, communication, and ethics.<br><br>
+              
+              🚀 Our society strives to be a driving force in the development of future engineering leaders and innovators. Along academics and careers, we believe in the importance of a vibrant social life. E4L-HWUD organizes social events, team-building activities, and networking sessions to foster lasting friendships and connections within the engineering community. <br><br>
 
-      <h2 class="w3-text-light-grey" style="font-family: 'Courier New', Courier, monospace; font-size: 200%; margin: 0%;">Our Aims</h2>
-      <hr style="width:200px" class="w3-opacity">
-      <p style="color: white;">🚀E4L-HWUD aims to stand as the primary destination for engineering enthusiasts within Heriot-Watt University Dubai. We provide a supportive and inclusive environment where students from various engineering disciplines and other courses can come together to learn, collaborate, and thrive.<br><br>
-
-        🚀 Our society aims in nurturing well-rounded engineers. We aim to offer a multifaceted experience that goes beyond academics. This includes professional development, social engagement, and personal growth opportunities to ensure that our members are prepared for the challenges and opportunities they will face in their engineering careers.<br><br>
-        
-        🚀 We are committed to equipping our members with a diverse skill set, encompassing technical, interpersonal, and ethical skills. This includes providing access to workshops, seminars, and resources that enhance both technical prowess and soft skills such as leadership, communication, and ethics.<br><br>
-        
-        🚀 Our society strives to be a driving force in the development of future engineering leaders and innovators. Along academics and careers, we believe in the importance of a vibrant social life. E4L-HWUD organizes social events, team-building activities, and networking sessions to foster lasting friendships and connections within the engineering community. <br><br>
-
-        🚀 Engineering is inherently tied to innovation. E4L aims to cultivate an environment where members are encouraged to think creatively, solve problems, and generate new ideas. This aligns with the core principles of engineering.<br><br>
-      </p>
-
-      <h3 class="w3-padding-16 w3-text-light-grey" style="font-family: 'Courier New', Courier, monospace; font-size: 200%;">Why join us?</h3>
-      <p class="w3-wide">Knowledge</p>
-      <div class="w3-white"">
-        <div class="w3-dark-grey" style="height:28px;width:100%;"><center>100%</center></div>
-      </div>
-      <p class="w3-wide">Fun</p>
-      <div class="w3-white">
-        <div class="w3-dark-grey" style="height:28px;width:100%;text-align: center;">100%</div>
-      </div>
-      <p class="w3-wide">Expertise</p>
-      <div class="w3-white">
-        <div class="w3-dark-grey" style="height:28px;width:100%;text-align: center;">100%</div>
-      </div>
-      <p class="w3-wide">Expertise</p>
-      <div class="w3-white">
-        <div class="w3-dark-grey" style="height:28px;width:100%;text-align: center;">100%</div>
-      </div>
-      <p class="w3-wide">Networking</p>
-      <div class="w3-white">
-        <div class="w3-dark-grey" style="height:28px;width:100%;text-align: center;">100%</div>
-      </div>
-      <p class="w3-wide">Resources</p>
-      <div class="w3-white">
-        <div class="w3-dark-grey" style="height:28px;width:100%;text-align: center;">100%</div>
-      </div>
-      <br>
-      
-      <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
-        <div class="w3-quarter w3-section">
-          <span class="w3-xlarge">200+</span><br>
-          Members
+              🚀 Engineering is inherently tied to innovation. E4L aims to cultivate an environment where members are encouraged to think creatively, solve problems, and generate new ideas. This aligns with the core principles of engineering.<br><br>
+            </p>
+            <h3 class="w3-text-light-grey" style="font-family: 'Courier New', Courier, monospace; font-size: 200%; margin: 0%; font-weight: bold;">Why join us?</h3>
+            <hr style="width:220px" class="textcontent1">
+            <p>🚀 Innovative Learning Opportunities<br><br>
+            🚀 Engaging Workshops<br><br>
+            🚀 Fun-Filled Events<br><br>
+            🚀 Networking Opportunities<br><br>
+            🚀 Personal and Professional Growth<br><br>
+            🚀 Field Trips and Site Visits<br><br>
+            🚀 Leadership Opportunities<br><br>
+            🚀 Supportive Environment<br><br></p>
         </div>
-        <div class="w3-quarter w3-section">
-          <span class="w3-xlarge">50+</span><br>
-          Projects Completed
-        </div>
-        <div class="w3-quarter w3-section">
-          <span class="w3-xlarge">89+</span><br>
-          Happy Clients
-        </div>
-        <div class="w3-quarter w3-section">
-          <span class="w3-xlarge">150+</span><br>
-          Meetings
-        </div>
-      </div>
-      
-      <!-- Grid for pricing tables
-      <h3 class="w3-padding-16 w3-text-light-grey">My Price</h3>
-      <div class="w3-row-padding" style="margin:0 -16px">
-        <div class="w3-half w3-margin-bottom">
-          <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-            <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
-            <li class="w3-padding-16">Web Design</li>
-            <li class="w3-padding-16">Photography</li>
-            <li class="w3-padding-16">5GB Storage</li>
-            <li class="w3-padding-16">Mail Support</li>
-            <li class="w3-padding-16">
-              <h2>$ 10</h2>
-              <span class="w3-opacity">per month</span>
-            </li>
-            <li class="w3-light-grey w3-padding-24">
-              <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
-            </li>
-          </ul>
-        </div>
-
-        <div class="w3-half">
-          <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-            <li class="w3-dark-grey w3-xlarge w3-padding-32">Pro</li>
-            <li class="w3-padding-16">Web Design</li>
-            <li class="w3-padding-16">Photography</li>
-            <li class="w3-padding-16">50GB Storage</li>
-            <li class="w3-padding-16">Endless Support</li>
-            <li class="w3-padding-16">
-              <h2>$ 25</h2>
-              <span class="w3-opacity">per month</span>
-            </li>
-            <li class="w3-light-grey w3-padding-24">
-              <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
-            </li>
-          </ul>
-        </div>
-      <!-- End Grid/Pricing tables -->
-      </div>
-      
-      <!-- Testimonials -->
-      <h3 class="w3-padding-24 w3-text-light-grey">My Reputation</h3>  
-      <img src="/w3images/bandmember.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-      <p><span class="w3-large w3-margin-right">Chris Fox.</span> CEO at Mighty Schools.</p>
-      <p>John Doe saved us from a web disaster.</p><br>
-      
-      <img src="/w3images/avatar_g2.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-      <p><span class="w3-large w3-margin-right">Rebecca Flex.</span> CEO at Company.</p>
-      <p>No one is better than John Doe.</p>
-    <!-- End About Section -->
     </div>
-    
-    <!-- Portfolio Section -->
-    <div class="w3-padding-64 w3-content" id="photos">
-      <h2 class="w3-text-light-grey">My Photos</h2>
-      <hr style="width:200px" class="w3-opacity">
-
-      <!-- Grid for photos -->
-      <div class="w3-row-padding" style="margin:0 -16px">
-        <div class="w3-half">
-          <img src="/w3images/wedding.jpg" style="width:100%">
-          <img src="/w3images/rocks.jpg" style="width:100%">
-          <img src="/w3images/sailboat.jpg" style="width:100%">
-        </div>
-
-        <div class="w3-half">
-          <img src="/w3images/underwater.jpg" style="width:100%">
-          <img src="/w3images/chef.jpg" style="width:100%">
-          <img src="/w3images/wedding.jpg" style="width:100%">
-          <img src="/w3images/p6.jpg" style="width:100%">
-        </div>
-      <!-- End photo grid -->
-      </div>
-    <!-- End Portfolio Section -->
-    </div>
-
-    <!-- Contact Section -->
-    <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
-      <h2 class="w3-text-light-grey">Contact Me</h2>
-      <hr style="width:200px" class="w3-opacity">
-
-      <div class="w3-section">
-        <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Chicago, US</p>
-        <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p>
-        <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
-      </div><br>
-      <p>Let's get in touch. Send me a message:</p>
-
-      <form action="/action_page.php" target="_blank">
-        <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
-        <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
-        <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
-        <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
-        <p>
-          <button class="w3-button w3-light-grey w3-padding-large" type="submit">
-            <i class="fa fa-paper-plane"></i> SEND MESSAGE
-          </button>
-        </p>
-      </form>
-    <!-- End Contact Section -->
+      </p>
     </div>
     
       <!-- Footer -->
@@ -278,7 +160,6 @@
       <i class="fa fa-facebook-official w3-hover-opacity"></i>
       <a class="fa fa-instagram w3-hover-opacity" href="https://www.instagram.com/" target="_blank"></a>
       <i class="fa fa-snapchat w3-hover-opacity"></i>
-      <a class="fa fa-pinterest-p w3-hover-opacity"></i>
       <i class="fa fa-twitter w3-hover-opacity"></i>
       <i class="fa fa-linkedin w3-hover-opacity"></i>
       <p class="w3-medium">Created by <a href="https://www.linkedin.com/company/ulink-technologies/" target="_blank" class="w3-hover-text-green">ULink Technologies</a></p>
