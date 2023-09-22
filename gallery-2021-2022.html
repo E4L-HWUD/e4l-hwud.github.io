@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+  <title>E4L | Official Website</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- For editing the social media sharing card -->
+  <meta property="og:title" content='E4L | Official Website'/>
+  <meta property="og:image" content='https://drive.google.com/uc?export=view&id=1KrNhfTQbWYgpIShmaukex3oCG-6j5aMh'/>
+  <meta property="og:description" content='Explore engineering with E4L at HWUD'/>
+  <meta property="og:url" content='https://e4l-hwud.github.io/'/>
+  <meta property="og:type" content="website">
+  <meta property="og:image:width" content='1200' />
+  <meta property="og:image:height" content='630' />
+  <!-- Ends here -->
+
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+      body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+  .w3-row-padding img {margin-bottom: 12px}
+  /* Set the width of the sidebar to 120px */
+  .w3-sidebar {width: 120px;background: #222;}
+  /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+  #main {margin-left: 120px}
+  /* Remove margins from "page content" on small screens */
+  @media only screen and (max-width: 600px) {#main {margin-left: 0}}
+
+  /*Gallery*/
+
+.heading {
+    text-align: center;
+    font-size: 2.0em;
+    letter-spacing: 1px;
+    padding: 40px;
+    color: white;
+}
+
+.gallery-image {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery-image img {
+  height: 100%;
+  width: 100%;
+  transform: scale(1.0);
+  transition: transform 0.4s ease;
+}
+
+.img-box {
+  box-sizing: content-box;
+  margin: 10px;
+  height: 250px;
+  width: 350px;
+  overflow: hidden;
+  display: inline-block;
+  color: white;
+  position: relative;
+  background-color: white;
+}
+
+.caption {
+  position: absolute;
+  bottom: 5px;
+  left: 20px;
+  opacity: 0.0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.transparent-box {
+  height: 250px;
+  width: 350px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: background-color 0.3s ease;
+}
+
+.img-box:hover img { 
+  transform: scale(1.1);
+}
+
+.img-box:hover .transparent-box {
+  background-color:rgba(0, 0, 0, 0.5);
+}
+
+.img-box:hover .caption {
+  transform: translateY(-20px);
+  opacity: 1.0;
+}
+
+.img-box:hover {
+  cursor: pointer;
+}
+
+.caption > p:nth-child(2) {
+  font-size: 0.8em;
+}
+
+.opacity-low {
+  opacity: 0.5;
+}
+  </style>
+  <body class="w3-black" style="background-image: url(images/custombackground.jpg); background-repeat: no-repeat; height: 100%; width: 100%; background-size: cover;">
+
+  <!-- Icon Bar (Sidebar - hidden on small screens) -->
+  <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+    <!-- Avatar image in top left corner -->
+    <img src="logos/black1.png" style="width:100%" class="imagetop">
+      <p style="background-color: black; margin-top: 0%; margin-bottom: 0%; padding-bottom: 10%; padding-top: 5%;">E4L</p>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-black">
+      <i class="fa fa-home w3-xxlarge"></i>
+      <p>HOME</p>
+    </a>
+    <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+      <i class="fa fa-id-card w3-xxlarge"></i>
+      <p>ABOUT</p>
+    </a>
+    <a href="ourteam.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+        <i class="fa fa-users w3-xxlarge"></i>
+        <p>OUR TEAM</p>
+      </a>
+      <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+        <i class="fa fa-picture-o w3-xxlarge"></i>
+        <p>PHOTOS</p>
+      </a>
+    <a href="contact.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+        <i class="fa fa-envelope w3-xxlarge"></i>
+        <p>CONTACT</p>
+      </a>
+  </nav>
+
+  <!-- Navbar on small screens (Hidden on medium and large screens) -->
+  <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+    <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small" style="display: block; opacity: 100%;">
+      <center><img src="logos/black1.png" style="width: 20%; padding-bottom: 4%;"></center>
+      <a href="#" class="w3-bar-item w3-button" style="width:20% !important">HOME</a>
+      <a href="#about" class="w3-bar-item w3-button" style="width:20% !important">ABOUT</a>
+      <a href="ourteam.html" class="w3-bar-item w3-button" style="width:20% !important">OUR TEAM</a>
+      <a href="gallery-2023-2024.html" class="w3-bar-item w3-button" style="width:20% !important">GALLERY</a>
+      <a href="contact.html" class="w3-bar-item w3-button" style="width:20% !important">CONTACT</a>
+    </div>
+  </div>
+
+  <!-- Page Content -->
+  <div class="w3-padding-large" id="main">
+    <!-- Header/Home -->
+    <header style="background-color: #222; text-align: center; color: white; padding-bottom: 3%; padding-top: 1%; align-self: center;">
+      <h1 style="font-size: 300%; padding-top: 1%;">Engineers 4 Life</h1>
+      <p style="margin-top: 0%;">Explore the world of engineering with us</p>
+    </header>
+
+
+<!-- About Section -->
+
+<!--Robowars section starts from here-->
+
+<p class="heading" style="font-family: 'Courier New', Courier, monospace; font-size: 4rem; margin: 0%; font-weight: bold;">Our Gallery</p>
+<div class="w3-bar w3-black" style="width: 100%; margin: 0 auto; text-align: center; display: flex; justify-content: center;">
+  <a href="gallery-2021-2022.html" class="w3-bar-item w3-button" style="border-radius: 0; margin: 0; padding-right: 5%; padding-left: 5%;">
+    Year 2023-2024
+  </a>
+  <a href="gallery-2022-2023.html" class="w3-bar-item w3-button" style="border-radius: 0; margin: 0; padding-right: 5%; padding-left: 5%;">
+    Year 2022-2023
+  </a>
+  <a href="gallery-2021-2023.html" class="w3-bar-item w3-button" style="border-radius: 0; margin: 0; padding-right: 5%; padding-left: 5%;">
+    Year 2021-2022
+  </a>
+</div>
+<p class="heading" style="font-family: 'Courier New', Courier, monospace; font-size: 3rem; margin: 0%; font-weight: bold;">Year 2022-2023</p>
+<p class="heading" style="font-size: 2rem; margin: 0%; font-weight: bold;">RoboWars</p>
+  <div class="gallery-image">
+    <div class="img-box">
+      <img src="images/Robowars/robowars1.jpg" alt="" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p>Robowars</p>
+          <p class="opacity-low">Poster for robowars</p>
+        </div>
+      </div> 
+    </div>
+    <div class="img-box">
+      <img src="images/Robowars/robowars2.jpg" alt="" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p>Robowars</p>
+          <p class="opacity-low">One of the robots</p>
+        </div>
+      </div>
+    </div>
+    <div class="img-box">
+      <img src="images/Robowars/robowars3.jpg" alt="" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p>Robowars</p>
+          <p class="opacity-low">The team working on their robot</p>
+        </div>
+      </div>
+    </div>
+    <div class="img-box">
+      <img src="images/Robowars/robowars4.jpg" alt="" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p>Robowars</p>
+
+        </div>
+      </div> 
+    </div>
+    <div class="img-box">
+      <img src="images/Robowars/robowars5.jpg" alt="" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p>Robowars</p>
+          <p class="opacity-low">The winners of Robowars 2022-2023</p>
+        </div>
+      </div> 
+    </div>
+  </div>
+
+  <!--Meet the robots section starts from here-->
+
+  <p class="heading" style="font-size: 2rem; margin: 0%; font-weight: bold;">Meet the Robots</p>
+  <div class="gallery-image">
+    <div class="img-box">
+      <img src="images/Meet the robots/mtr1.jpg" alt="" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p>Meet the Robots</p>
+          <p class="opacity-low">Reachy</p>
+        </div>
+      </div> 
+    </div>
+    <div class="img-box">
+      <img src="images/Meet the robots/mtr2.jpg" alt="" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p>Meet the Robots</p>
+        </div>
+      </div>
+    </div>
+    <div class="img-box">
+      <img src="images/Meet the robots/mtr3.jpg" alt="" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p>Meet the Robots</p>
+        </div>
+      </div>
+    </div>
+
+    <!--Iftaar party section starts from here-->
+      <div>
+        <p class="heading" style="font-size: 2rem; margin: 0%; font-weight: bold;">Iftaar Party</p>
+        <div class="gallery-image">
+          <div class="img-box">
+            <img src="images/Iftaar party/if1.jpg" alt="" />
+            <div class="transparent-box">
+              <div class="caption">
+                <p>Iftaar Party</p>
+              </div>
+            </div> 
+          </div>
+          <div class="img-box">
+            <img src="images/Iftaar Party/if2.jpg" alt="" />
+            <div class="transparent-box">
+              <div class="caption">
+                <p>Iftaar Party</p>
+              </div>
+            </div>
+          </div>
+          <div class="img-box">
+            <img src="images/Iftaar Party/if3.jpg" alt="" />
+            <div class="transparent-box">
+              <div class="caption">
+                <p>Iftaar Party</p>
+              </div>
+            </div>
+          </div>
+          <div class="img-box">
+            <img src="images/Iftaar Party/if4.jpg" alt="" />
+            <div class="transparent-box">
+              <div class="caption">
+                <p>Iftaar Party</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--F1 Cars section starts from here-->
+      <div>
+        <p class="heading" style="font-size: 2rem; margin: 0%; font-weight: bold;">F1 Cars</p>
+        <div class="gallery-image">
+          <div class="img-box">
+            <img src="images/F1 cars/f11.jpg" alt="" />
+            <div class="transparent-box">
+              <div class="caption">
+                <p>F1 cars</p>
+              </div>
+            </div> 
+          </div>
+          <div class="img-box">
+            <img src="images/F1 cars/f12.jpg" alt="" />
+            <div class="transparent-box">
+              <div class="caption">
+                <p>F1 Cars</p>
+              </div>
+            </div>
+          </div>
+          <div class="img-box">
+            <img src="images/F1 cars/f13.jpg" alt="" />
+            <div class="transparent-box">
+              <div class="caption">
+                <p>F1 Cars</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Hologram section starts from here-->
+      <div>
+        <p class="heading" style="font-size: 2rem; margin: 0%; font-weight: bold;">Holograms</p>
+        <div class="gallery-image">
+          <div class="img-box">
+            <img src="images/Holograms/holo1.jpg" alt="" />
+            <div class="transparent-box">
+              <div class="caption">
+                <p>Holograms</p>
+              </div>
+            </div> 
+          </div>
+          <div class="img-box">
+            <img src="images/Holograms/holo2.jpg" alt="" />
+            <div class="transparent-box">
+              <div class="caption">
+                <p>Holograms</p>
+              </div>
+            </div>
+          </div>
+          <div class="img-box">
+            <img src="images/Holograms/holo3.jpg" alt="" />
+            <div class="transparent-box">
+              <div class="caption">
+                <p>Holograms</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Hologram section starts from here-->
+      <div>
+        <p class="heading" style="font-size: 2rem; margin: 0%; font-weight: bold;">Prom Night</p>
+        <div class="gallery-image">
+          <div class="img-box">
+            <img src="images/prom night/pr1.jpg" alt="" />
+            <div class="transparent-box">
+              <div class="caption">
+                <p>Prom Night</p>
+              </div>
+            </div> 
+          </div>
+          <div class="img-box">
+            <img src="images/prom night/pr2.jpg" alt="" />
+            <div class="transparent-box">
+              <div class="caption">
+                <p>Prom Night</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+    
+<!--End here-->
+    
+    
+      <!-- Footer -->
+    <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+      <i class="fa fa-facebook-official w3-hover-opacity"></i>
+      <a class="fa fa-instagram w3-hover-opacity" href="https://www.instagram.com/" target="_blank"></a>
+      <i class="fa fa-snapchat w3-hover-opacity"></i>
+      <i class="fa fa-twitter w3-hover-opacity"></i>
+      <i class="fa fa-linkedin w3-hover-opacity"></i>
+      <p class="w3-medium">Created by <a href="https://www.linkedin.com/company/ulink-technologies/" target="_blank" class="w3-hover-text-green">ULink Technologies</a></p>
+    <!-- End footer -->
+    </footer>
+
+  <!-- END PAGE CONTENT -->
+  </div>
+
+  </body>
+</html>
