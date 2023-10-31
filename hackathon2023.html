@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<title>E4L | Official Website</title>
+	<link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<!-- For editing the social media sharing card -->
+	<meta property="og:title" content="E4L | Official Website" />
+	<meta property="og:image" content="https://drive.google.com/uc?export=view&id=1KrNhfTQbWYgpIShmaukex3oCG-6j5aMh" />
+	<meta property="og:description" content="Explore engineering with E4L at HWUD" />
+	<meta property="og:url" content="https://e4l-hwud.github.io/" />
+	<meta property="og:type" content="website" />
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="630" />
+	<!-- Ends here -->
+
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="styles.css" />
+	<style>
+		body,
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			font-family: "Montserrat", sans-serif;
+		}
+		.w3-row-padding img {
+			margin-bottom: 12px;
+		}
+		/* Set the width of the sidebar to 120px */
+		.w3-sidebar {
+			width: 120px;
+			background: #222;
+		}
+		/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+		#main {
+			margin-left: 120px;
+		}
+		/* Remove margins from "page content" on small screens */
+		@media only screen and (max-width: 600px) {
+			#main {
+				margin-left: 0;
+			}
+		}
+
+		.heading {
+			text-align: center;
+			font-size: 2em;
+			letter-spacing: 1px;
+			padding: 40px;
+			color: white;
+		}
+	</style>
+	<body class="w3-black">
+		<div id="sidebar"></div>
+
+		<!-- Page Content -->
+		<div class="w3-padding-large" id="main">
+			<!-- Header/Home -->
+			<header
+				style="
+					background-color: #222;
+					text-align: center;
+					color: white;
+					padding-bottom: 3%;
+					padding-top: 1%;
+					align-self: center;
+				"
+			>
+				<h1 style="font-size: 300%; padding-top: 1%">Engineers 4 Life</h1>
+				<p style="margin-top: 0%">Explore the world of engineering with us</p>
+			</header>
+
+			<p
+				class="heading"
+				style="font-family: 'Courier New', Courier, monospace; font-size: 4rem; margin: 0%; font-weight: bold"
+			>
+				Presenting: The E4L Hackathon 2023
+			</p>
+			<img
+				src="./images/hackathon.jpeg"
+				alt="Hackathon poster"
+				style="width: calc(120px + 22vw); margin: 0 auto; display: block"
+			/>
+
+			<div id="footer"></div>
+
+			<!-- END PAGE CONTENT -->
+		</div>
+		<script src="./template.js"></script>
+	</body>
+</html>

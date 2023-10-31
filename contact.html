@@ -19,7 +19,7 @@
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css">
   <style>
       body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   .w3-row-padding img {margin-bottom: 12px}
@@ -30,46 +30,9 @@
   /* Remove margins from "page content" on small screens */
   @media only screen and (max-width: 600px) {#main {margin-left: 0}}
   </style>
-  <body class="w3-black" style="background-image: url(images/custombackground.jpg); background-repeat: no-repeat; background-size: cover;">
+  <body class="w3-black">
 
-  <!-- Icon Bar (Sidebar - hidden on small screens) -->
-  <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
-    <!-- Avatar image in top left corner -->
-    <img src="logos/black1.png" style="width:100%" class="imagetop">
-      <p style="background-color: black; margin-top: 0%; margin-bottom: 0%; padding-bottom: 10%; padding-top: 5%;">E4L</p>
-    <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-black">
-      <i class="fa fa-home w3-xxlarge"></i>
-      <p>HOME</p>
-    </a>
-    <a href="index.html#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-      <i class="fa fa-id-card w3-xxlarge"></i>
-      <p>ABOUT</p>
-    </a>
-    <a href="ourteam.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-        <i class="fa fa-users w3-xxlarge"></i>
-        <p>OUR TEAM</p>
-      </a>
-      <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-        <i class="fa fa-picture-o w3-xxlarge"></i>
-        <p>PHOTOS</p>
-      </a>
-    <a href="contact.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-        <i class="fa fa-envelope w3-xxlarge"></i>
-        <p>CONTACT</p>
-      </a>
-  </nav>
-
-  <!-- Navbar on small screens (Hidden on medium and large screens) -->
-  <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
-    <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small" style="display: block; opacity: 100%;">
-      <center><img src="logos/black1.png" style="width: 20%; padding-bottom: 4%;"></center>
-      <a href="#" class="w3-bar-item w3-button" style="width:20% !important">HOME</a>
-      <a href="index.html#about" class="w3-bar-item w3-button" style="width:20% !important">ABOUT</a>
-      <a href="ourteam.html" class="w3-bar-item w3-button" style="width:20% !important">OUR TEAM</a>
-      <a href="gallery.html" class="w3-bar-item w3-button" style="width:20% !important">GALLERY</a>
-      <a href="contact.html" class="w3-bar-item w3-button" style="width:20% !important">CONTACT</a>
-    </div>
-  </div>
+  <div id="sidebar"></div>
 
   <!-- Page Content -->
   <div class="w3-padding-large" id="main">
@@ -108,19 +71,11 @@
       </form>
     <!-- End Contact Section -->
     
-    
-      <!-- Footer -->
-      <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
-        <a class="fa fa-instagram w3-hover-opacity" href="https://www.instagram.com/e4l_hwu/" style="text-decoration: none; color: white;" target="_blank"></a>
-        <a class="fa fa-twitter w3-hover-opacity" href="https://twitter.com/e4l_hwud" style="text-decoration: none; color: white;"><a>
-        <a class="fa fa-linkedin w3-hover-opacity" target="_blank" href="https://www.linkedin.com/company/engineers-for-life-hwud/" style="text-decoration: none; color: white;"></a>
-        <p class="w3-medium" style="color: white;">Created by <a href="https://www.linkedin.com/company/ulink-technologies/" target="_blank" class="w3-hover-text-green" style="color: white;">Aditya S | ULink Technologies</a></p>
-      <!-- End footer -->
-      </footer>
+    <div id="footer"></div>
 
   <!-- END PAGE CONTENT -->
   </div>
-
   <script src="Google Sheet.js"></script>
+  <script src="./template.js"></script>
   </body>
 </html>
