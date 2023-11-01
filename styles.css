@@ -10,6 +10,15 @@ body {
 	background-size: cover;
 }
 
+.w3-bar {
+	white-space: nowrap;
+	overflow: auto;
+}
+.w3-bar .w3-bar-item {
+	float: none;
+	display: inline-block;
+}
+
 .team-member {
 	background-color: #ffffff;
 	border-radius: 10px;

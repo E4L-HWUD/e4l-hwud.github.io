@@ -45,11 +45,12 @@ const sideBarTemplate = `
 <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
 <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small" style="display: block; opacity: 100%;">
     <center><img src="logos/black1.png" style="width: 20%; padding-bottom: 4%;"></center>
-    <a href="#" class="w3-bar-item w3-button" style="width:20% !important">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button" style="width:20% !important">ABOUT</a>
+    <a href="index.html" class="w3-bar-item w3-button">HOME</a>
+    <a href="index.html#about" class="w3-bar-item w3-button" style="width:20% !important">ABOUT</a>
     <a href="ourteam.html" class="w3-bar-item w3-button" style="width:20% !important">OUR TEAM</a>
     <a href="gallery-2023-2024.html" class="w3-bar-item w3-button" style="width:20% !important">GALLERY</a>
     <a href="contact.html" class="w3-bar-item w3-button" style="width:20% !important">CONTACT</a>
+    <a href="hackathon2023.html" class="w3-bar-item w3-button" style="width:20% !important">HACKATHON</a>
 </div>
 </div>
 `;
